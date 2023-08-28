@@ -4,23 +4,23 @@
 }}
 
 <main>
-
-  <section>
+  <div class="product__list">
     <div class="form">
       <h1 class="form__title">Список товарів</h1>
       <div class="user-list">
-        <div class="card">
-          {{#with data.products}}
-          <ul>
-            {{#each list}}
-            <li>{{name}} | {{price}} | {{description}} | {{id}} <a href="/product-edit?id={{id}}">(Редагувати)</a></li>
-            {{/each}}
-          </ul>
-          {{/with}}
+        {{#with data.products}}
+        <div class="product">
+          {{#each list}}
+          {{> product-card}}
+          {{/each}}
         </div>
+        {{/with}}
       </div>
     </div>
-  </section>
+    <div class="button">
+      <a href="/product-create" class="button">Добавити товар</a>
+    </div>
+  </div>
 </main>
 
 

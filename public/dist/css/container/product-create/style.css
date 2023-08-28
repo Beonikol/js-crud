@@ -30,18 +30,13 @@
   border: 1px solid #ddd;
   padding: 8px;
   border-radius: 20px;
+  background-color: #3326e9;
+  color: white;
 }
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.user-list li {
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+.form__colums {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

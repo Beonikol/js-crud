@@ -38,7 +38,7 @@ class Product {
     this.name = name
     this.price = price
     this.description = description
-    this.id = Math.floor(Math.random() * 10)
+    this.id = Math.floor(Math.random() * 10000)
     this.createDate = () => {
       this.date = new Date().toISOString()
     }
@@ -70,11 +70,13 @@ class Product {
 
   static updateById = (id, data) => {
     const product = this.getById(id)
-    const { name } = data
+    const { name, price, description } = data
 
     if (product) {
-      if (name) {
+      if ((name, price, description)) {
         product.name = name
+        product.price = price
+        product.description = description
       }
 
       return true
@@ -83,9 +85,22 @@ class Product {
     }
   }
 
-  static update = (name, { product }) => {
+  static update = (
+    name,
+    price,
+    description,
+    { product },
+  ) => {
     if (name) {
       product.name = name
+    }
+
+    if (price) {
+      product.price = price
+    }
+
+    if (description) {
+      product.description = description
     }
   }
 }

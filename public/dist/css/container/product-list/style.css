@@ -1,54 +1,80 @@
-.form {
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  gap: 32px;
+.product__list {
+  margin: 12px;
 }
+
+.product__title {
+  color: blue;
+}
+
+.product__card {
+  margin: 16px;
+  padding: 20px;
+}
+
 .form__title {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: bold;
   padding-bottom: 4px;
   border-bottom: 1px solid #ddd;
 }
-.form__content {
+
+.product {
+  margin: 12px;
   display: grid;
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
 }
-.form__field {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.product__card {
+  border: 1px solid #000;
+  border-radius: 25px;
+  padding-top: 12px;
 }
-.form__label {
+.product__name {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+.product__description {
+  font-size: 15px;
+  padding-bottom: 8px;
+}
+.product__id {
   font-size: 14px;
+  color: silver;
+  padding-bottom: 8px;
 }
-.form__input {
-  border: 1px solid #ddd;
-  padding: 8px;
+.product__price {
+  font-weight: bold;
 }
-.form__button {
-  border: 1px solid #ddd;
-  padding: 8px;
-  border-radius: 20px;
+.product__edit {
+  color: blue;
 }
-
-main {
+.product__row {
   display: flex;
-  flex-direction: column;
-  gap: 40px;
+  justify-content: space-between;
+}
+.product__edit {
+  font-weight: bold;
 }
 
-.user-list li {
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+a {
+  text-decoration: none;
 }
 
-.card {
-  display: flex;
-  border: 1px solid #ddd;
-  padding: 16px;
-  border-radius: 6px;
+.button {
+  text-decoration: none;
+  color: white;
+  max-width: 248px;
+  width: 100%;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+  background: #3326e9;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.button:hover {
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=style.css.map */

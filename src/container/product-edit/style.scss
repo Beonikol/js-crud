@@ -34,22 +34,29 @@
 	}
 
 	&__button {
-		border: 1px solid s.color('light');
-		padding: s.space(2);
-		border-radius: 20px;
+		text-decoration: none;
+		color: white;
+		display: inline-block;
+		font-size: 16px;
+		padding: 10px 20px;
+		background: s.color('button');
+		border-radius: 4px;
+		text-align: center;
+	}
+
+	&__colums {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: s.space(4);
 	}
 }
 
-main {
-	display: flex;
-	flex-direction: column;
-	gap: s.space(10);
+.colums_button {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: s.space(4);
 }
 
-.user-list {
-	li {
-		padding-right: 15px;
-		padding-top: 5px;
-		padding-bottom: 5px;
-	}
+#delete {
+	background-color: s.color('danger');
 }
