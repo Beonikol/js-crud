@@ -1,0 +1,90 @@
+@use '../../lib/service.scss' as s;
+
+.product__list {
+    margin: s.space(3)
+}
+
+.product__title{
+    color: blue;
+}
+
+.product__card {
+    margin: s.space(4);
+    padding: 20px;
+}
+
+.form {
+    &__title {
+        font-size: 30px;
+		font-weight: bold;
+		padding-bottom: s.space(1);
+        border-bottom: 1px solid s.color('light');
+    }
+}
+
+.product{
+    margin: s.space(3);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &__card{
+        border: 1px solid #000;
+        border-radius: 25px;
+        padding-top: s.space(3)
+    }
+
+    &__name {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: s.space(2);
+    }
+
+    &__description {
+        font-size: 15px;
+        padding-bottom: s.space(2);
+    }
+
+    &__id {
+        font-size: 14px;
+        color: silver;
+        padding-bottom: s.space(2);
+    }
+
+    &__price {
+        font-weight: bold;
+    }
+
+    &__edit {
+        color: blue;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__edit {
+        font-weight: bold;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+text-decoration: none;
+  color: white;
+  max-width: 248px;
+  width: 100%;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+  background: s.color('button');
+  border-radius: 4px;
+  text-align: center;
+}
+
+.button:hover {
+  opacity: 0.7;
+}

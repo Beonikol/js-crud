@@ -27,16 +27,29 @@
   padding: 8px;
 }
 .form__button {
-  border: 1px solid #ddd;
-  padding: 8px;
-  border-radius: 20px;
-  background-color: #3326e9;
+  text-decoration: none;
   color: white;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+  background: #3326e9;
+  border-radius: 4px;
+  text-align: center;
 }
 .form__colums {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.colums_button {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+}
+
+#delete {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

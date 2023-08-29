@@ -34,16 +34,29 @@
 	}
 
 	&__button {
-		border: 1px solid s.color('light');
-		padding: s.space(2);
-		border-radius: 20px;
-		background-color: s.color('button');
-		color: s.color('words_button');
+		text-decoration: none;
+		color: white;
+		display: inline-block;
+		font-size: 16px;
+		padding: 10px 20px;
+		background: s.color('button');
+		border-radius: 4px;
+		text-align: center;
 	}
 
 	&__colums {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		gap: s.space(4);
 	}
+}
+
+.colums_button {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: s.space(4);
+}
+
+#delete {
+	background-color: s.color('danger');
 }
