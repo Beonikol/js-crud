@@ -1,0 +1,80 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+<main class="main">
+  <section class="purchase-info">
+    <div class="form">
+      {{> heading}}
+
+      {{#with data}}
+      <div class="purchase-item">
+        <div class="purchase-item__block">
+          <span class="title">ID:</span>
+          <span class="text">{{id}}</span>
+        </div>
+      </div>
+      {{>divider}}
+      <div class="purchase-item">
+        <div class="purchase-item__block">
+          <span class="title">Ім'я:</span>
+          <span class="text">{{firstname}}</span>
+        </div>
+        <div class="purchase-item__block">
+          <span class="title">Призвище:</span>
+          <span class="text">{{lastname}}</span>
+        </div>
+        <div class="purchase-item__block">
+          <span class="title">Телефон:</span>
+          <span class="text">{{phone}}</span>
+        </div>
+        <div class="purchase-item__block">
+          <span class="title">Електронна пошта:</span>
+          <span class="text">{{email}}</span>
+        </div>
+      </div>
+      {{>divider}}
+      <div class="purchase-item">
+        <div class="purchase-item__block">
+          <span class="title">Назва товару:</span>
+          <span class="text">{{product}}</span>
+        </div>
+        <div class="purchase-item__block">
+          <span class="title">Коментар:</span>
+          <span class="text">{{comment}}</span>
+        </div>
+      </div>
+      {{>divider}}
+      <div class="purchase-item">
+        <div class="purchase-item__block">
+          <span class="title">Вартість товару:</span>
+          <span class="text">{{productPrice}} ₴</span>
+        </div>
+        <div class="purchase-item__block">
+          <span class="title">Вартість доставки:</span>
+          <span class="text">{{deliveryPrice}} ₴</span>
+        </div>
+        <div class="purchase-item__block">
+          <span class="title">Сума до сплати:</span>
+          <span class="text">{{totalPrice}} ₴</span>
+        </div>
+        <div class="purchase-item__block">
+          <span class="title">Нараховані бонуси:</span>
+          <span class="text">{{bonus}} ₴</span>
+        </div>
+      </div>
+      {{>divider}}
+      <a href="/purchase-edit?id={{id}}">{{>button text="Змінити дані"}}</a>
+      {{/with}}
+    </div>
+  </section>
+</main>
+
+
+{{!
+Цей код містить лише те, що буде виводитись в
+
+<body>
+  Адже наш layout/default.hbs має вже структуру HTML
+  }}
