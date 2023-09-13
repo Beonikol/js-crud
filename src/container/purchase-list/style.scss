@@ -1,0 +1,21 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/purchase-product/style.scss' as purchaseProduct;
+@use '../../component/field/style.scss' as fild;
+@use '../../component/divider/style.scss' as divider;
+@use '../../component/button/style.scss' as button;
+@use '../../component/purchases-item/style.scss' as item;
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: s.space(10);
+	padding: s.space(10);
+}
+
+.purchase-list {
+     display: flex;
+	 flex-direction: column;
+	 gap: s.space(4);
+}

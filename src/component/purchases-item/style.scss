@@ -1,0 +1,30 @@
+@use '../../lib/service.scss' as s;
+
+.purchase-button {
+	text-decoration: none;
+}
+
+.purceses-item {
+     display: grid;
+	 grid-template-columns: repeat(4, 1fr);
+	 gap:s.space(4);
+	 width: 100%;
+	 align-items: center;
+	 text-decoration: none;
+}
+
+.purceses-item__block {
+	display: flex;
+	flex-direction: column;
+	gap: s.space(2);
+}
+
+.title {
+	font-size: s.space(3);
+	color: s.color(gray);
+}
+
+.text {
+	font-size: s.space(5);
+	color: s.color(dark);
+}

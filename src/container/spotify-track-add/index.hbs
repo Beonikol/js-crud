@@ -1,0 +1,47 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+<main class="main">
+
+  <section class="main__content playlist">
+    {{#with data}}
+    <h1 class="title title--center">Додати до плейліста</h1>
+
+    <div class="track__list-color">
+
+      <ul class="track__list">
+        {{#each tracks}}
+        <li class="track">
+          <img src="{{image}}" alt="{{name}}" class="track__image">
+          <div class="track__content">
+            <strong class="track__name">{{name}}</strong>
+            <em class="track_author">{{author}}</em>
+          </div>
+          {{!-- <a href="/spotify-track-delete?playlistId={{../playlistId}}&trackId={{id}}">
+            <img src="/svg/delete_button.svg">
+          </a> --}}
+          <form action="/spotify-track-add" method="POST">
+            <input type="hidden" name="playlistId" value="{{../playlistId}}">
+            <input type="hidden" name="trackId" value="{{id}}">
+            <button type="submit">
+              <img src="/svg/tabler_plus.svg" class="track))icon">
+            </button>
+          </form>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    {{/with}}
+  </section>
+
+</main>
+
+
+{{!
+Цей код містить лише те, що буде виводитись в
+
+<body>
+  Адже наш layout/default.hbs має вже структуру HTML
+  }}

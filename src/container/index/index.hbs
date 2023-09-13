@@ -3,32 +3,34 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 }}
 
-<main>
-  <section>
-    <div class="form">
-      <h1 class="form__title">Створення товару</h1>
-      <form method="POST" action="/product-create">
-        <div class="form__content">
-          <div class="form__colums">
-            <div class="form__field">
-              <label for="name" class="form__label">Назва товару:</label>
-              <input type="name" name="name" class="form__input">
-            </div>
-            <div class="form__field">
-              <label for="price" class="form__label">Ціна:</label>
-              <input type="price" name="price" class="form__input">
-            </div>
-          </div>
-          <div class="form__field">
-            <label for="description" class="form__label">Короткий опис:</label>
-            <input type="description" name="description" class="form__input">
-          </div>
+<main class="main">
+  {{#with data}}
+  <section class="main__content">
+    <header class="header">
+      <h1 class="header__title">Моя бібліотека</h1>
+      <div class="header__icons">
+        <a href="/spotify-search" class="header__icon">
+          <img src="/svg/spotify-serch.svg" alt="search" class="icon">
+        </a>
+        <a href="/spotify-choose" class="header__icon">
+          <img src="/svg/icon-add.svg" alt="add" class="icon">
+        </a>
+      </div>
+    </header>
 
-          <button class="form__button">Створити</button>
-        </div>
-      </form>
-    </div>
+    <ul class="playlist__list">
+      {{#each list}}
+      <a href="/spotify-track-add?playlistId={{id}}" class="playlist__item">
+        <li class="playlist__content">
+          <img src="{{image}}" alt="" class="playlist__image">
+          <strong class="title">{{name}}</strong>
+          <p class="text">{{amount}} пісень</p>
+        </li>
+      </a>
+      {{/each}}
+    </ul>
   </section>
+  {{/with}}
 </main>
 
 

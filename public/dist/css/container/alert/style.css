@@ -1,0 +1,38 @@
+.card {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+.card__header {
+  flex-grow: 1;
+}
+.card__button {
+  background-color: blue;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.card__button:hover {
+  background-color: darkblue;
+}
+.card__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+.card__subtitle {
+  font-size: 18px;
+  margin-top: 8px;
+  color: #666666;
+}
+
+/*# sourceMappingURL=style.css.map */
