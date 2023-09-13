@@ -3,9 +3,10 @@ $colorMap: (
 	button: #3326e9,
 	words_button: white,
 	danger: red,
-	gray: gray,
+	gray: #BDBDBD,
 	dark: black,
 	main: rgb(119, 148, 187),
+	green: #20D562,
 );
 
 @function color ($key) {

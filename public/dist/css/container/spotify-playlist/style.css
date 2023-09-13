@@ -82,58 +82,13 @@ a:hover {
   color: #BDBDBD;
 }
 
-.search {
-  background-color: #292929;
-  padding: 8px 32px;
-  border-radius: 8px;
+.add-button {
   display: grid;
-  grid-template-columns: 56px 1fr auto;
-  gap: 32px;
-  color: #ddd;
-  font-size: 24px;
-}
-.search__button {
-  color: #ddd;
-  transition: opacity 0.6s;
-}
-.search__button:hover {
-  opacity: 0.6;
-}
-
-.header__icons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 24px;
-}
-
-.header__title {
-  font-size: 30px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
+  grid-template-columns: 92px 1fr;
   align-items: center;
-}
-
-.playlist__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.title {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%;
-}
-
-.text {
-  color: #BDBDBD;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%;
+  gap: 24px;
+  color: #ddd;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

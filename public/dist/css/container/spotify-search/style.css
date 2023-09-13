@@ -100,40 +100,4 @@ a:hover {
   opacity: 0.6;
 }
 
-.header__icons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 24px;
-}
-
-.header__title {
-  font-size: 30px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.playlist__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.title {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%;
-}
-
-.text {
-  color: #BDBDBD;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%;
-}
-
 /*# sourceMappingURL=style.css.map */
